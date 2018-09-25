@@ -1,0 +1,162 @@
+a
+{
+    color: black;
+    text-decoration: none;
+}
+body
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family:  Arial,Helvetica,sans-serif;
+    color: black;
+}
+header
+{
+    background-color: darkgreen;
+    padding: 20px;
+    font-size: 12pt;
+}
+h1
+{
+    margin: 0px;
+    background-color: darkgreen;
+}
+p
+{
+    padding: 10px;
+    margin: 0px;
+}
+
+main
+{
+    padding: 5px;
+    text-indent: 12px;
+}
+h3
+{
+    text-indent: 0px;
+    color: rgb(46, 151, 46);
+    font-size: 20px
+}
+ul
+{
+    list-style-type: none;
+    margin-top: 0px;
+    background-color: lightgreen;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0px;
+    font-size: 12pt;
+}
+li
+{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 0px;
+    text-decoration: none;
+    width: 100%;
+}
+header/p:hover
+{
+    background-color: blue;
+}
+li:hover { 
+    background-color: darkgreen;
+}
+footer
+{
+    color: darkgreen;
+    text-align: center;
+}
+hr
+{
+    color: darkgreen;
+}
+a.highlight:hover
+{
+    background-color: darkcyan;
+}
+body:active
+{
+    background: darkgreen;
+    color: black;
+}
+body:active footer
+{
+    color: black;
+}
+body:active ul
+{
+    background: darkgreen;
+    color: black;
+}
+body:active header
+{
+    background: lightgreen;
+    color: black;
+}
+body:active h1
+{
+    background: lightgreen;
+}
+.flex-container
+{
+    display: flex;
+    justify-content: center;
+
+}
+.big-page
+{
+    text-indent: 0px
+}
+.small-page
+{
+    text-indent: -9999px
+}
+@media only screen and (max-width: 600px)
+{
+    header
+    {
+        font-size: 8pt;
+    }
+    body
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .flex-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    li
+    {
+        display: flex;
+        justify-content: center;
+        width: 97.5%;
+    }
+    .big-page
+    {
+        text-indent: -9999px
+    }
+    .small-page
+    {
+        text-indent: 0px
+    }
+}
+@media only screen and (max-width: 900px)
+{
+    .main
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .main>p
+    {
+        display: flex;
+        flex-direction: column
+    }
+}
